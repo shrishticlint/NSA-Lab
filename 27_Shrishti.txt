@@ -1,0 +1,34 @@
+
+1)
+1)cat m1.txt m2.txt >> m3.txt
+2)cp m3.txt /home/exam/FISAT/DAY3/c3.txt
+3)chmod -g +wt f3.txt
+4)ps -aex
+5)pwd
+
+2)
+echo -e "Enter your choice\n1.Circle\n2.Rectangle\n3.Triangle"
+read ch
+case $ch in
+    1)
+	echo "Enter radius"
+	read r
+	ar=`expr 22 \* $r \* $r`
+	ar=`expr $ar / 7`
+	echo "$ar";;
+    2)
+	echo "Enter length"
+	read l
+	echo "Enter breadth"
+	read b
+	ar=`expr $l \* $b`
+	echo "$ar";;
+    3)
+	echo "Enter base"
+	read b
+	echo "Enter height"
+	read h
+	ar=`expr $b \* $h`
+	ar=`expr $ar / 2`
+	echo "$ar";;
+esac
